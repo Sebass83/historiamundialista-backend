@@ -16,11 +16,3 @@ const port = process.env.PORT || app.get('port');
 
 app.listen( PORT);
 
-// mundial: Mundial[] = [];
-// anfitrion: PaisAnfitrion[] = [];  
-// introduccion:Introduccion[] = [];
-// equipos:Equipo[] = [];
-// grupos:Grupo[] = [];
-// sedes: Sede[] = [];
-// podios:Podio[] = [];
-// goleadores: Goleador[] = [];
