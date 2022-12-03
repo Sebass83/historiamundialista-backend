@@ -1,6 +1,6 @@
-import app from './app';
-import { PORT } from './config';
-import Mundiales from './controllers/controller.mundial';
+import app from './app.js';
+import { PORT } from './config.js';
+import Mundiales from './controllers/controller.mundial.js';
 
 
 app.get('/api/', Mundiales.listaMundiales);

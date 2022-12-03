@@ -1,6 +1,5 @@
 
 import express  from 'express';
-import config from './config'
 import cors  from 'cors';
 
 const app = express();
