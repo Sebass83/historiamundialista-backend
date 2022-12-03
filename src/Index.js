@@ -14,9 +14,7 @@ app.get('/api/podio/:id', Mundiales.getPodios)
 app.get('/api/goleadores/:id', Mundiales.getGoleadores)
 const port = process.env.PORT || app.get('port');
 
-app.listen( PORT, ()=>{
-    console.log(`Aplicacion corriendo en el puerto ${PORT}`);
-});
+app.listen( PORT);
 
 // mundial: Mundial[] = [];
 // anfitrion: PaisAnfitrion[] = [];  
