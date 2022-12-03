@@ -1,4 +1,5 @@
 import app from './app';
+import { PORT } from './config';
 import Mundiales from './controllers/controller.mundial';
 
 
@@ -13,6 +14,15 @@ app.get('/api/podio/:id', Mundiales.getPodios)
 app.get('/api/goleadores/:id', Mundiales.getGoleadores)
 const port = process.env.PORT || app.get('port');
 
-app.listen( port, ()=>{
-    console.log(`Aplicacion corriendo en el puerto ${port}`);
+app.listen( PORT, ()=>{
+    console.log(`Aplicacion corriendo en el puerto ${PORT}`);
 });
+
+// mundial: Mundial[] = [];
+// anfitrion: PaisAnfitrion[] = [];  
+// introduccion:Introduccion[] = [];
+// equipos:Equipo[] = [];
+// grupos:Grupo[] = [];
+// sedes: Sede[] = [];
+// podios:Podio[] = [];
+// goleadores: Goleador[] = [];
